@@ -8,7 +8,7 @@ class User(AbstractUser):
         max_length=20, validators=[MinLengthValidator(3)],
         verbose_name="Имя пользователя", unique=True,
         error_messages={
-            "unique": ("A user with that username already exists."),
+            "unique": ("Такой пользователь уже существует"),
         },
     )
 
